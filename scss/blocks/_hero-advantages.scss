@@ -1,0 +1,46 @@
+.hero-advantages {
+    margin-top: 62px;
+    width: 87.5%;
+
+    display: grid;
+    grid-template-columns: 190fr 290fr 320fr 275fr;
+    gap: 64px;
+
+    @media(width <= $container-width) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+    @media(width <= $breakpoint480) {
+        gap: 28px;
+        margin-top: 40px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__icon {
+        @media(width <= $container-width) {
+            max-height: 64px;
+        }
+        @media(width <= $breakpoint480) {
+            max-width: 48px;
+            min-width: 48px;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        color: #fff;
+
+        @media(width <= $container-width) {
+            font-size: 18px;
+        }
+        @media(width <= $breakpoint480) {
+            font-size: 12px;
+            max-width: 140px;
+        }
+    }
+}

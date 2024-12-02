@@ -1,22 +1,31 @@
 // color
-$main-color: #548235;
-$accent-color: #D4E1BD;
-$secondary-color: #11332A; 
-$main-text: #3A3737;
+$main-color: #FEE2A4;
+$accent-color: #2D2827;
+$secondary-color: #2D2827; 
+$third-color: #E7CD92; 
+
+$main-font-color: #1F1615;
+$accent-font-color: #4A3B1C;
+
+$gradient-light-color: linear-gradient(90deg, #ebd39e 0%, #fbf0d9 50%, #ebd39e 100%) var(--x, 0) / 100%;
+$gradient-dark-color: linear-gradient(90deg, #e3c273 0%, #f4da9f 50%, #e2c06e 100%) var(--x, 0) / 100%;
 
 // breakpoint 
 $breakpoint1440: 1440 + px;
 $breakpoint1280: 1280 + px;
 $breakpoint1024: 1024 + px;
 $breakpoint768: 768 + px;
+$breakpoint600: 600 + px;
 $breakpoint480: 480 + px;
 $breakpoint375: 375 + px;
 
 // font-family
-$font-family: '';
+$font-roboto: "Roboto", serif;
+$font-inter: "Inter", serif;
+
 
 // border-radius
-$main-radius: 35px;
+$main-radius: 35px; 
 
 // container
 $container-width: 1440px;

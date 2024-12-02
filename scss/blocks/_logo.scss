@@ -1,0 +1,10 @@
+.logo {
+
+    & img {
+        width: 100%;
+
+        @media(width <= $breakpoint480) {
+            height: 48px;
+        }
+    }
+}

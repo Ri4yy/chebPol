@@ -1,0 +1,16 @@
+.brands {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+
+    @media(width <= $breakpoint1280) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-items: center;
+        gap: 20px;
+    }
+    @media(width <= $breakpoint768) {
+        margin-top: 40px;
+    }
+}

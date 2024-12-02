@@ -1,6 +1,5 @@
 .custom-checkbox {
 	display: block;
-	margin: 0;
 	cursor: pointer;
 	user-select: none;
 	position: relative;
@@ -33,19 +32,15 @@
     & span {
         display: inline-block;
         position: relative; 
-        padding: 0 0 0 35px; 
+        padding: 0 0 0 30px; 
         line-height: 24px;   
-        
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        color: $main-text;
 
         @media(max-width: $breakpoint1024) {
             font-size: 14px;
         }
         @media(max-width: $breakpoint480) {
             font-size: 12px;
+            line-height: 20px;
         }
 
         &:hover {
@@ -62,13 +57,13 @@
         &::before {
             content: "";
             display: inline-block;
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             position: absolute;
             left: 0;
-            top: 0;
-            border: 1px solid $main-text;
-            border-radius: 6px;
+            top: 4px;
+            border-radius: 2px;
+            background: #fff;
         }
     }
 }

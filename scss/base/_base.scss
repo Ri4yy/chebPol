@@ -2,19 +2,32 @@
 
 html,
 body {
-    font-family: '';
+    font-family: $font-roboto;
     scroll-behavior: smooth;
 }
 
 // Заголовки
 h1 {
     color: $main-color;
+    font-weight: 700;
+    font-size: 64px;
 }
-h2 {
-    color: $main-color;
+h2 { 
+    font-weight: 600;
+    font-size: 36px;
 }
 h3 {
-    color: $main-text;
+
+}
+
+.section-title {
+
+    &--dark {
+        color: $main-font-color;
+    }
+    &--gold {
+        color: $third-color;
+    }
 }
 
 // База
@@ -24,7 +37,7 @@ h3 {
     margin: 0 auto;
 
     &__inner {
-        margin-top: 40px;
+        margin-top: 30px;
 
         @media(max-width: $breakpoint768) {
             margin-top: 24px;
@@ -38,16 +51,13 @@ h3 {
         padding: 0 $padding-sm;
     }
 }
-.section {
-    margin-top: $section-top;
 
-    @media(max-width: $breakpoint768) {
-        margin-top: 90px;
-    }
+.bg-dark {
+    background: $secondary-color;
 }
 
 .left-padding {
-    padding-left: calc((100vw - $section-top) / 2);
+    padding-left: calc((100vw - $container-width) / 2);
 
     @media(max-width: $container-width) {
         padding-left: $padding-md;
@@ -60,3 +70,12 @@ h3 {
 .no-scroll {
     overflow: hidden;
 }
+
+@keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+  }

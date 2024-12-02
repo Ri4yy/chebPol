@@ -1,0 +1,31 @@
+.property {
+
+    &__wrapper {
+        margin: 40px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        max-width: 1000px;
+
+        position: relative;
+        z-index: 3;
+
+        @media(width <= $breakpoint1024) {
+            padding: 0 $padding-md;
+            gap: 20px;
+        }
+        @media(width <= $breakpoint768) {
+            padding: 0 $padding-sm;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &__img {
+
+    }
+    &__info {
+
+    }
+}

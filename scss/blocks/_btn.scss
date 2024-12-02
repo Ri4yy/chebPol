@@ -1,0 +1,52 @@
+.btn {
+    transition: all .3s ease;
+    border-radius: 4px;
+
+    &--gold {
+        background: $main-color;
+
+        &:hover {
+            background: #f9d075;
+        }
+    }
+    &--light_gradient {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: $gradient-light-color;
+
+        font-weight: 600;
+        font-size: 18px;
+        color: #302e29;
+
+        @media(width <= $breakpoint480) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            --x: 0%;
+
+            background: linear-gradient(90deg, #e8bf66 0%,
+            #fbf0d9 50%,
+            #ebd39e 100%) var(--x, 0) / 200%;
+        }
+    }
+    &--dark_gradient {
+        
+        background: $gradient-dark-color;
+
+        font-weight: 700;
+        font-size: 18px;
+        color: $main-font-color;
+
+        @media(width <= $breakpoint480) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            --x: 0%;
+
+            background: linear-gradient(90deg, #f1ca6f 0%,
+            #f4da9f 50%, 
+            #e2c06e 100%) var(--x, 0) / 200%;
+        }
+    }
+}

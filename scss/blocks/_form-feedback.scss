@@ -1,0 +1,67 @@
+.form-feedback {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media(width <= $breakpoint480) {
+        margin-top: 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media(width <= $breakpoint480) {
+            gap: 6px;
+        }
+    }
+    &__name {
+        font-family: $font-inter;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+
+        @media(width <= $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 30px;
+
+        @media(width <= $breakpoint480) {
+            margin-top: 16px;
+        }
+    }
+    &__btn {
+        padding: 20px;
+        width: 100%;
+
+        font-weight: 600;
+        font-size: 18px;
+        color: #1b1b1b;
+
+        @media(width <= $breakpoint480) {
+            padding: 14px;
+            font-size: 12px;
+        }
+    }
+    &__agree {
+        margin-top: 12px;
+
+        & > span {
+            font-family: $font-inter;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+
+            & > a {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}

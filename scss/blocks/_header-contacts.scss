@@ -1,0 +1,60 @@
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+
+    &--mobile {
+        align-items: center;
+    }
+
+    &__phone {
+        font-family: $font-inter;
+        font-weight: 800;
+        font-size: 18px;
+        color: $accent-font-color;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+    }
+    &__text {
+        font-family: $font-inter;
+        font-weight: 500;
+        font-size: 18px;
+        color: $accent-font-color;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+    }
+    &__mail {
+        font-family: $font-inter;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+        color: $accent-font-color;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+
+        &::before {
+            content: url(../assets/img/icons/mail.svg);
+            height: 18px;
+        }
+    }
+}

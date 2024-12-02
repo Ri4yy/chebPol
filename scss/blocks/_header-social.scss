@@ -1,0 +1,58 @@
+.header-social {
+
+    &--mobile {
+
+    }
+
+    &__status {
+        font-family: $font-inter;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        font-weight: 600;
+        font-size: 18px;
+        color: $accent-font-color;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+
+        &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #42ca21;
+            border-radius: 50%;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    }
+    &__list {
+        margin-top: 18px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media(max-width: $breakpoint480) {
+            margin-top: 10px;
+            gap: 10px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        flex-shrink: 0;
+        min-width: 31px;
+
+        @media(max-width: $breakpoint480) {
+            min-width: 0;
+            max-width: 24px;
+        }
+    }
+}

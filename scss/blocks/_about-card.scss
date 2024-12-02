@@ -1,0 +1,39 @@
+.about-card {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 388 / 480;
+    }
+    &__description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        min-height: 100px;
+        width: 100%;
+        padding: 18px 20px;
+        background: #dfc68b;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+        @media(width <= $breakpoint1024) {
+            padding: 16px;
+            min-height: 80px;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 28px;
+        color: #1f1f1f;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+        @media(width <= $breakpoint1280) {
+            font-size: 22px;
+        }
+        @media(width <= $breakpoint1024) {
+            font-size: 16px;
+        }
+    }
+}

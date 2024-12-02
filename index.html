@@ -3,52 +3,939 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
     <title>Главная</title>
     <link rel="stylesheet" href="./assets/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/libs/animate.min.css">
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="/" class="logo">
-                    <img src="" alt="">
-                </a>
-                <nav class="menu">
-                    <ul class="menu-nav">
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link menu-nav__link--active">Ссылка 1</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 2</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 3</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 4</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 5</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__contacts">
-                    <a href="tel:" class="header__phone">8 (999) 999-99-99</a>
-                    <a href="mailto:" class="header__mail">test-test@test.ru</a>
+                <div class="header__left">
+                    <a href="/" class="logo">
+                        <img src="./assets/img/icons/logo.svg" alt=""> 
+                    </a>
+                    <p class="header__text">Широкий ассортимент напольных покрытий</p>
                 </div>
-                <button class="btn-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="header__right">
+                    <div class="header-social header-social--desktop">
+                        <div class="header-social__status">Мы онлайн</div>
+                        <ul class="header-social__list">
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">
+                                    <img src="./assets/img/icons/viber.svg" class="header-social__icon" alt="">
+                                </a>
+                            </li>
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">
+                                    <img src="./assets/img/icons/tg.svg" class="header-social__icon" alt="">
+                                </a>
+                            </li>
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">
+                                    <img src="./assets/img/icons/wa.svg" class="header-social__icon" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-contacts header-contacts--desktop">
+                        <a href="tel:+79373987808" class="header-contacts__phone">+7 (937) 398-78-08</a>
+                        <p class="header-contacts__text">Позвоните нам</p>
+                        <a href="mailto:chebpol@yandex.ru" class="header-contacts__mail">chebpol@yandex.ru</a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <div class="menu__wrapper">
+                        <div class="header-social header-social--mobile">
+                            <div class="header-social__status">Мы онлайн</div>
+                            <ul class="header-social__list">
+                                <li class="header-social__item">
+                                    <a href="" class="header-social__link">
+                                        <img src="./assets/img/icons/viber.svg" class="header-social__icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a href="" class="header-social__link">
+                                        <img src="./assets/img/icons/tg.svg" class="header-social__icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="header-social__item">
+                                    <a href="" class="header-social__link">
+                                        <img src="./assets/img/icons/wa.svg" class="header-social__icon" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-contacts header-contacts--mobile">
+                            <a href="tel:+79373987808" class="header-contacts__phone">+7 (937) 398-78-08</a>
+                            <p class="header-contacts__text">Позвоните нам</p>
+                            <a href="mailto:chebpol@yandex.ru" class="header-contacts__mail">chebpol@yandex.ru</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="btn-toggle">
+                    <button class="btn-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
+    <main>
+        <!-- Баннер -->
+        <section class="section-hero">
+            <img src="./assets/img/bg/hero-right.png" class="section-hero__img" alt="">
+            <div class="section-hero__wrapper">
+                <div class="container">
+                    <div class="hero">
+                        <h1 class="hero__title">Идеальный пол для Вашего дома!</h1>
+                        <p class="hero__text">Выберите идеальный пол для Вашего дома! Наши покрытия стильные, долговечные и легкие в уходе. Преобразите интерьер с качественными полами от нашей компании!</p>
+                        <button class="btn btn--gold hero__btn hero__btn--desktop btn-consult">Получить консультацию</button>
+                    </div>
+                    <div class="hero-advantages">
+                        <div class="hero-advantages__item">
+                            <img src="./assets/img/icons/delivery.svg" class="hero-advantages__icon" alt="">
+                            <p class="hero-advantages__text">Быстрая доставка</p>
+                        </div>
+                        <div class="hero-advantages__item">
+                            <img src="./assets/img/icons/worker.png" class="hero-advantages__icon" alt="">
+                            <p class="hero-advantages__text">Квалифицированные укладчики с опытом работы более 10 лет</p>
+                        </div>
+                        <div class="hero-advantages__item">
+                            <img src="./assets/img/icons/assortment.svg" class="hero-advantages__icon" alt="">
+                            <p class="hero-advantages__text">Большой ассортимент товаров</p>
+                        </div>
+                        <div class="hero-advantages__item">
+                            <img src="./assets/img/icons/individual.svg" class="hero-advantages__icon" alt="">
+                            <p class="hero-advantages__text">Индивидуальный подход к клиентам</p>
+                        </div>
+                    </div>
+                    <button class="btn btn--gold hero__btn hero__btn--mobile btn-consult">Получить консультацию</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Каталог -->
+        <section class="section-catalog">
+            <div class="section-catalog__wrapper">
+                <img src="./assets/img/effects/catalog-1_left.svg" class="section-catalog__left-square section-catalog__left-square_1" alt="">
+                <img src="./assets/img/effects/catalog-1_left.svg" class="section-catalog__left-square section-catalog__left-square_2" alt="">
+                <img src="./assets/img/effects/catalog-1_left.svg" class="section-catalog__left-square section-catalog__left-square_3" alt="">
+                <img src="./assets/img/effects/catalog-1_left.svg" class="section-catalog__left-square section-catalog__left-square_4" alt="">
+
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_1" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_2" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_3" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_4" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_5" alt="">
+
+                <div class="section-head">
+                    <div class="section-head__title section-head__title--dark">
+                        <p class="wow animate__fadeInUp">Кварцвинил</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container__inner">
+                        <div class="catalog">
+                            <div class="catalog__wrapper">
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-1.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Noventis Дуб Йеллоустоун</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Noventis Дуб Йеллоустоун">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-2.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Aberhof Prado 2996</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Aberhof Prado 2996">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-3.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Aberhof Chevron 2197/1600</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Aberhof Chevron 2197/1600">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-4.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Damy Floor Ascent Эверест</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Damy Floor Ascent Эверест">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-5.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Плитка ПВХ Tarkett Lounge Husky</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Плитка ПВХ Tarkett Lounge Husky">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-6.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Aberhof Alfa Birne 206</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Aberhof Alfa Birne 206">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-7.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Royce Enjoy Дуб Берсель</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Royce Enjoy Дуб Берсель">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./assets/img/catalog/quartz-8.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Noventis Grand Canyon Дуб Ред Рок</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Noventis Grand Canyon Дуб Ред Рок">Цена по запросу</button>
+                                </div>
+                            </div>
+                            <div class="catalog__bottom">
+                                <button class="btn btn--light_gradient catalog__request wow animate__backInUp" data-wow-delay="1.6s">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-catalog__wrapper">
+                <img src="./assets/img/effects/catalog-2_left.svg" class="section-catalog__left-square section-catalog__left-square_1" alt="">
+                <img src="./assets/img/effects/catalog-2_left.svg" class="section-catalog__left-square section-catalog__left-square_2" alt="">
+                <img src="./assets/img/effects/catalog-2_left.svg" class="section-catalog__left-square section-catalog__left-square_3" alt="">
+                <img src="./assets/img/effects/catalog-2_left.svg" class="section-catalog__left-square section-catalog__left-square_4" alt="">
+
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_1" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_2" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_3" alt="">
+                <img src="./assets/img/effects/catalog-1_right.svg" class="section-catalog__right-square section-catalog__right-square_4" alt="">
+                <img src="./assets/img/effects/catalog-2_right.svg" class="section-catalog__right-square section-catalog__right-square_5" alt="">
+
+                <div class="section-head">
+                    <div class="section-head__title section-head__title--dark">
+                        <p class="wow animate__fadeInUp">Ламинат</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container__inner">
+                        <div class="catalog">
+                            <div class="catalog__wrapper">
+                                <div class="catalog__item wow animate__fadeInUp">
+                                    <img src="./assets/img/catalog/laminate-1.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Ideal Choice Дуб Вояж</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Ideal Choice Дуб Вояж">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay=".2s">
+                                    <img src="./assets/img/catalog/laminate-2.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Aberhof Art Chateau Дуб Гропиус</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Aberhof Art Chateau Дуб Гропиус">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay=".4s">
+                                    <img src="./assets/img/catalog/laminate-3.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Classen Visio Grande Бетон серый</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Classen Visio Grande Бетон серый">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay=".6s">
+                                    <img src="./assets/img/catalog/laminate-4.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Ideal Enigma дуб Дженерейшн</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Ideal Enigma дуб Дженерейшн">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay=".8s">
+                                    <img src="./assets/img/catalog/laminate-5.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Kastamonu Blue FP704 Дуб Касадор</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Kastamonu Blue FP704 Дуб Касадор">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay="1s">
+                                    <img src="./assets/img/catalog/laminate-6.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Floordreams Vario Дуб Аспен</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Floordreams Vario Дуб Аспен">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay="1.2s">
+                                    <img src="./assets/img/catalog/laminate-7.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Floordreams Vario Дуб Шеир</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Floordreams Vario Дуб Шеир">Цена по запросу</button>
+                                </div>
+                                <div class="catalog__item wow animate__fadeInUp" data-wow-delay="1.4s">
+                                    <img src="./assets/img/catalog/laminate-8.png" class="catalog__img" alt="">
+                                    <p class="catalog__name">Castello Classic Дуб Тоскана</p>
+                                    <button class="btn btn--dark_gradient catalog__btn" data-name="Castello Classic Дуб Тоскана">Цена по запросу</button>
+                                </div>
+                            </div>
+                            <div class="catalog__bottom">
+                                <button class="btn btn--light_gradient catalog__request wow animate__backInUp" data-wow-delay="1.6s">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таблица -->
+        <section class="section-table bg-dark">
+            <div class="section-table__wrapper">
+
+                <img src="./assets/img/effects/table_left.svg" class="section-table__left-square" alt="">
+                <img src="./assets/img/effects/table_right.svg" class="section-table__right-square" alt="">
+
+                <h2 class="section-table__title wow animate__fadeInUp">Выберите напольное покрытие подходящее для ваших решений!</h2>
+            
+                <div class="section-table__inner">
+                    <img src="./assets/img/photo/table.png" class="section-table__img" alt="">
+
+                    <div class="table wow animate__pulse" data-wow-delay=".2s">
+                        <div class="table__col">
+                            <div class="table__inner">
+                                <div class="table__head">
+                                    <p>Свойства</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Долговечность</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Стойкость</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Особенности<br> монтажа</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Водостойкость</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Безопасность</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__col">
+                            <div class="table__inner">
+                                <div class="table__head">
+                                    <p>Кварцвинил</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">20-25 лет</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Хорошо выдерживает нагрузку мебели и падение тяжелых предметов</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Лёгкая укладка без специализированного оборудования</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Абсолютная</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Экологически безопасен</p>
+                                </div>
+                            </div>
+                            <div class="table__inner">
+                                <div class="table__head">
+                                    <p>Ламинат</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">От 10 до 25 лет, в зависимости от класса</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Относительная. Лучше всего у дорогих моделей</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Лёгкая укладка с применением минимального набора спец.инструмента</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">До 48 часов</p>
+                                </div>
+                                <div class="table__item">
+                                    <p class="table__text">Относительная, в состав входят формальдегиды</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Бренды -->
+        <section class="section-brand">
+            <div class="section-head">
+                <div class="section-head__title section-head__title--dark">
+                    <p class="wow animate__fadeInUp">Бренды</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="brands">
+                    <img src="./assets/img/brands/fargo.svg" alt="" class="brands__item wow animate__fadeInUp" data-wow-delay=".2s">
+                    <img src="./assets/img/brands/aberhof.svg" alt="" class="brands__item wow animate__fadeInUp" data-wow-delay=".4s">
+                    <img src="./assets/img/brands/ba.svg" alt="" class="brands__item wow animate__fadeInUp" data-wow-delay=".6s">
+                    <img src="./assets/img/brands/tarkett.svg" alt="" class="brands__item wow animate__fadeInUp" data-wow-delay=".8s">
+                    <img src="./assets/img/brands/royce.svg" alt="" class="brands__item wow animate__fadeInUp" data-wow-delay="1s">
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма -->
+        <section class="section-form">
+            <div class="feedback">
+                <div class="left-padding">
+                    <h2 class="feedback__title">Получите каталог с ценами в удобном для вас мессенджере или на электронную почту</h2>
+                </div>
+                <div class="feedback__wrapper left-padding">
+                    <div class="feedback__left">
+                        <form action="" class="form form-feedback">
+                            <label class="form-feedback__item">
+                                <span class="form-feedback__name">Введите номер Вашего телефона</span>
+                                <input type="tel" name="phone" class="form-input" placeholder="+7 (___) ___-___" data-phone>
+                            </label>
+                            <label class="form-feedback__item">
+                                <span class="form-feedback__name">и Email</span>
+                                <input type="email" name="email" class="form-input" placeholder="info@mail.ru">
+                            </label>
+                            <div class="form-feedback__bottom">
+                                <button type="submit" class="btn btn--gold form-feedback__btn">Получить каталог продукции с ценами</button>
+                                <label class="form-feedback__agree custom-checkbox">
+                                    <input type="checkbox" name="agree" checked>
+                                    <span>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="">Политикой конфиденциальности</a></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="feedback__right">
+                        <img src="./assets/img/photo/book.png" class="feedback__img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Выгодные предложения -->
+        <section class="section-benefit">
+            <div class="section-head">
+                <div class="section-head__title section-head__title--dark">
+                    <p class="wow animate__fadeInUp">Выгодные предложения</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__inner">
+                    <div class="benefit">
+                        <div class="benefit__item wow animate__fadeInUp" data-wow-delay=".2s">
+                            <div class="benefit-card">
+                                <img src="./assets/img/photo/deal-1.png" class="benefit-card__img" alt="">
+                                <div class="benefit-card__description">
+                                    <div class="benefit-card__corner">
+                                        <p class="benefit-card__title">Акция</p>
+                                        <p class="benefit-card__name">Скидка новосёлам до 20%</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-card__overlay">
+                                    <div class="benefit-card__inner">
+                                        <p class="benefit-card__text">Скидки для новосёлов! Предлагаем вам уникальную возможность обновить интерьер вашего нового дома с выгодой! Мы рады предложить скидки до 20% на широкий ассортимент напольных покрытий.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit__item wow animate__fadeInUp" data-wow-delay=".4s">
+                            <div class="benefit-card">
+                                <img src="./assets/img/photo/deal-2.png" class="benefit-card__img" alt="">
+                                <div class="benefit-card__description">
+                                    <div class="benefit-card__corner">
+                                        <p class="benefit-card__title">Акция</p>
+                                        <p class="benefit-card__name">Укладка в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-card__overlay">
+                                    <div class="benefit-card__inner">
+                                        <p class="benefit-card__text">Профессиональная укладка  в подарок при покупке от 10 т.р!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit__item wow animate__fadeInUp" data-wow-delay=".6s">
+                            <div class="benefit-card">
+                                <img src="./assets/img/photo/deal-3.png" class="benefit-card__img" alt="">
+                                <div class="benefit-card__description">
+                                    <div class="benefit-card__corner">
+                                        <p class="benefit-card__title">Акция</p>
+                                        <p class="benefit-card__name">Подложка в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-card__overlay">
+                                    <div class="benefit-card__inner">
+                                        <p class="benefit-card__text">Подложка в подарок при покупке от 5 т.р!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Технологии и свойства -->
+        <section class="section-property bg-dark">
+
+            <img src="./assets/img/effects/property_left.svg" class="section-property__left-square" alt="">
+            <img src="./assets/img/effects/property_right.svg" class="section-property__right-square" alt="">
+
+            <div class="section-head">
+                <div class="section-head__title section-head__title--gold">
+                    <p class="wow animate__fadeInUp">Технологии и свойства</p>
+                </div>
+            </div>
+            <div class="property">
+                <div class="property__wrapper">
+                    <div class="property__img">
+                        <img src="./assets/img/photo/property.png" class="wow animate__jello" data-wow-delay=".2s" alt="">
+                    </div>
+                    <div class="property__info">
+                        <ul class="property-list">
+                            <li class="property-list__item">
+                                <p class="property-list__text">Обработка УФ лучами</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Дополнительный защитный слой</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Основной защитный слой</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Декоративный HD слой</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Оптоволоконный слой</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Армирующий стеклохолст</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Основной слой</p>
+                            </li>
+                            <li class="property-list__item">
+                                <p class="property-list__text">Основа</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Полезное -->
+        <section class="section-useful">
+            <div class="section-head">
+                <div class="section-head__title section-head__title--dark">
+                    <p class="wow animate__fadeInUp">Полезное</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__inner">
+                    <div class="useful">
+                        <div class="useful__item wow animate__backInLeft" data-wow-delay=".2s">
+                            <img src="./assets/img/icons/checked.svg" class="useful__icon" alt="">
+                            <p class="useful__text">Уборку пола мы рекомендуем производить с помощью пылесоса, также пол можно убирать влажной или мокрой шваброй. </p>
+                        </div>
+                        <div class="useful__item wow animate__backInRight" data-wow-delay=".4s">
+                            <img src="./assets/img/icons/checked.svg" class="useful__icon" alt="">
+                            <p class="useful__text">Используйте офисные стулья и кресла с мягкими колесами, пригодными для виниловых полов или используйте соответствующий коврик.</p>
+                        </div>
+                        <div class="useful__item wow animate__backInLeft" data-wow-delay=".6s">
+                            <img src="./assets/img/icons/ban.svg" class="useful__icon" alt="">
+                            <p class="useful__text">Запрещается перемещать путем сдвига тяжелую мебель по уложенному напольному покрытию полу.</p>
+                        </div>
+                        <div class="useful__item wow animate__backInRight" data-wow-delay=".8s">
+                            <img src="./assets/img/icons/ban.svg" class="useful__icon" alt="">
+                            <p class="useful__text">Избегайте попадания на пол сигарет или иных горячих предметов - такое воздействие может привести к повреждению пола.
+                            </p>
+                        </div>
+                        <div class="useful__item wow animate__backInLeft" data-wow-delay="1s">
+                            <img src="./assets/img/icons/warning.svg" class="useful__icon" alt="">
+                            <p class="useful__text">Рекомендуется периодически передвигать коврики и мебель для предотвращения изменения цвета напольного покрытия.</p>
+                        </div>
+                        <div class="useful__item wow animate__backInRight" data-wow-delay="1.2s">
+                            <img src="./assets/img/icons/warning.svg" class="useful__icon" alt="">
+                            <p class="useful__text">Рекомендуем укладывать любое напольное покрытие на выровненное основание.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Получить консультацию -->
+        <section class="section-consult bg-dark">
+
+            <img src="./assets/img/effects/consult_left.svg" class="section-consult__left-square" alt="">
+            <img src="./assets/img/effects/consult_right.svg" class="section-consult__right-square" alt="">
+
+            <div class="consult">
+                <div class="consult__wrapper">
+                    <div class="consult__left">
+                        <div class="section-head">
+                            <div class="section-head__title section-head__title--gold consult__title">
+                                <p class="wow animate__fadeInUp">Получить консультацию</p>
+                            </div>
+                        </div>
+                        <div class="consult__text left-padding">
+                            <p class="wow animate__fadeInUp" data-wow-delay=".2s">Задайте вопрос ведущему эксперту с опытом более 15 лет в сфере напольных покрытий, который подберёт вам самый оптимальный вариант для ваших задач.</p>
+                        </div>
+                    </div>
+                    <div class="consult__form">
+                        <form action="" class="form form-consult">
+                            <p class="form-consult__title">Заполните форму</p>
+                            <div class="form-consult__wrapper">
+                                <div class="form-consult__item">
+                                    <span class="form-consult__name">Какой способ связи Вам удобен?</span>
+                                    <div class="button-groups">
+                                        <div class="toggle button-groups__item">
+                                            <input id="communication-1" type="radio" name="communication" value="phone" checked>
+                                            <label for="communication-1">
+                                                <img src="./assets/img/icons/phone.svg" alt="">
+                                                Телефон
+                                            </label>
+                                        </div>
+                                        <div class="toggle button-groups__item">
+                                            <input id="communication-2" type="radio" name="communication" value="tg" checked>
+                                            <label for="communication-2">
+                                                <img src="./assets/img/icons/tg.svg" alt="">
+                                                Telegram
+                                            </label>
+                                        </div>
+                                        <div class="toggle button-groups__item">
+                                            <input id="communication-3" type="radio" name="communication" value="viber" checked>
+                                            <label for="communication-3">
+                                                <img src="./assets/img/icons/viber.svg" alt="">
+                                                Viber
+                                            </label>
+                                        </div>
+                                        <div class="toggle button-groups__item">
+                                            <input id="communication-4" type="radio" name="communication" value="whatsapp" checked>
+                                            <label for="communication-4">
+                                                <img src="./assets/img/icons/wa.svg" alt="">
+                                                WhatsApp
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-consult__item">
+                                    <span class="form-consult__name">Введите номер Вашего телефона</span>
+                                    <input type="tel" name="phone" class="form-input" placeholder="+7 (___) ___-___" data-phone>
+                                </div>
+                                <div class="form-consult__item">
+                                    <button type="submit" class="btn btn--light_gradient form-consult__btn">Получить консультацию</button>
+                                    <label class="form-consult__agree custom-checkbox">
+                                        <input type="checkbox" name="agree" checked>
+                                        <span>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="">Политикой конфиденциальности</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="consult__img">
+                        <img src="./assets/img/photo/man.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Почему выбирают нас -->
+        <section class="section-about">
+            <div class="section-head">
+                <div class="section-head__title section-head__title--dark">
+                    <p class="wow animate__fadeInUp">Почему выбирают именно нас</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__inner">
+                    <div class="about">
+                        <p class="about__title wow animate__fadeInUp" data-wow-delay=".2s">Причины, по которым к нам обращаются многочисленные клиенты:</p>
+                        <div class="about__wrapper">
+                            <div class="about__item wow animate__fadeInUp" data-wow-delay=".4s">
+                                <div class="about-card">
+                                    <img src="./assets/img/photo/why-1.png" class="about-card__img" alt="">
+                                    <div class="about-card__description">
+                                        <p class="about-card__name">Высокое качество материалов</p>
+                                    </div>
+                                </div>
+                                <p class="about__description">Мы предлагаем высококачественные материалы для создания идеального пола.</p>
+                            </div>
+                            <div class="about__item wow animate__fadeInUp" data-wow-delay=".6s">
+                                <div class="about-card">
+                                    <img src="./assets/img/photo/why-2.png" class="about-card__img" alt="">
+                                    <div class="about-card__description">
+                                        <p class="about-card__name">Профессиональная установка</p>
+                                    </div>
+                                </div>
+                                <p class="about__description">Профессиональная установка гарантирует долговечность и надежность.
+                                </p>
+                            </div>
+                            <div class="about__item wow animate__fadeInUp" data-wow-delay=".8s">
+                                <div class="about-card">
+                                    <img src="./assets/img/photo/why-3.png" class="about-card__img" alt="">
+                                    <div class="about-card__description">
+                                        <p class="about-card__name">Индивидуальный подход к каждому клиенту</p>
+                                    </div>
+                                </div>
+                                <p class="about__description">Мы предлагаем персонализированные решения, адаптированные под нужды и пожелания каждого клиента.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section-advantages bg-dark">
+
+            <img src="./assets/img/effects/advantages_left.svg" class="section-advantages__left-square" alt="">
+            <img src="./assets/img/effects/advantages_right.svg" class="section-advantages__right-square" alt="">
+
+            <div class="section-head">
+                <div class="section-head__title section-head__title--gold">
+                    <p class="wow animate__fadeInUp">Преимущества</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="advantages">
+                    <div class="advantages__item wow animate__backInLeft" data-wow-delay=".2s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Качество продукции</p>
+                            <p class="advantages__text">Мы сотрудничаем только с проверенными и надежными брендами, предлагая товары, соответствующие высоким стандартам. Каждое покрытие проходит строгий контроль качества, что гарантирует его долговечность и надежность.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInRight" data-wow-delay=".4s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Широкий ассортимент</p>
+                            <p class="advantages__text">Наш магазин предлагает разнообразные напольные покрытия, включая ламинат, паркет, виниловые и ковровые покрытия, что позволяет выбрать идеальный вариант для любого интерьера и стиля.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInLeft" data-wow-delay=".6s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Консультации специалистов</p>
+                            <p class="advantages__text">Наша команда опытных консультантов готова помочь вам на каждом этапе выбора. Мы учитываем ваши пожелания и особенности помещения, чтобы предложить наиболее подходящие варианты.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInRight" data-wow-delay=".8s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Конкурентные цены</p>
+                            <p class="advantages__text">Мы стремимся предложить лучшие цены на рынке и регулярно проводим акции и распродажи, чтобы сделать качественные напольные покрытия доступными для каждого покупателя.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInLeft" data-wow-delay="1s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Гарантия на продукцию</p>
+                            <p class="advantages__text">Мы уверены в качестве нашей продукции и предоставляем гарантию на все товары. Это дает вам уверенность в том, что ваше покрытие прослужит долго и без проблем.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInRight" data-wow-delay="1.2s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Удобная доставка</p>
+                            <p class="advantages__text">Мы предлагаем быструю и надежную доставку по всей территории, чтобы вы могли получить свои товары в удобное для вас время и без лишних хлопот.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInLeft" data-wow-delay="1.4s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Услуги по укладке</p>
+                            <p class="advantages__text">Наша команда профессиональных мастеров предлагает услуги по укладке напольных покрытий. Мы гарантируем качественную работу и соблюдение всех технологий, чтобы ваше покрытие выглядело идеально.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item wow animate__backInRight" data-wow-delay="1.6s">
+                        <div class="advantages__wave">
+                            <img src="./assets/img/bg/wave.png" class="advantages__img" alt="">
+                        </div>
+                        <div class="advantages__right">
+                            <p class="advantages__name">Программа лояльности</p>
+                            <p class="advantages__text">Мы ценим наших постоянных клиентов и предлагаем им бонусы, скидки и специальные предложения. Это позволяет вам экономить на будущих покупках и получать дополнительные преимущества от сотрудничества с нами.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Вся продукция сертифицирована -->
+        <section class="section-carousel">
+            <div class="section-head">
+                <div class="section-head__title section-head__title--dark">
+                    <p class="wow animate__fadeInUp">Вся продукция сертифицирована</p>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="carousel__wrapper">
+                    <div class="swiper swiper-certificate">
+                        <div class="swiper-wrapper swiper-certificate__wrapper">
+                            <div class="swiper-slide swiper-certificate__slide"><img src="./assets/img/certificate/cert-1.png" class="swiper-certificate__img" alt=""></div>
+                            <div class="swiper-slide swiper-certificate__slide"><img src="./assets/img/certificate/cert-1.png" class="swiper-certificate__img" alt=""></div>
+                            <div class="swiper-slide swiper-certificate__slide"><img src="./assets/img/certificate/cert-1.png" class="swiper-certificate__img" alt=""></div>
+                            <div class="swiper-slide swiper-certificate__slide"><img src="./assets/img/certificate/cert-1.png" class="swiper-certificate__img" alt=""></div>
+                            <div class="swiper-slide swiper-certificate__slide"><img src="./assets/img/certificate/cert-1.png" class="swiper-certificate__img" alt=""></div>
+                        </div>
+                      
+                        <div class="swiper-button-prev">
+                            <img src="./assets/img/icons/arrow-prev.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="./assets/img/icons/arrow-next.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Где купить -->
+        <section class="section-map">
+            <div class="section-head">
+                <div class="section-head__title section-head__title--gold">
+                    <p class="wow animate__fadeInUp">Где купить?</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A61a6354eba1c5804428d0ef9c5510d576779b20688bacdaeb01700bbaa2cdfaa&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal modal--form">
+        <div class="modal__body modal__body--form">
+            <div class="modal__wrapper modal__wrapper--form">
+                <button class="close-modal">
+                    <img src="./assets/img/icons/close.svg" alt="">
+                </button>
+                <div class="modal__info">
+                    <div class="modal__header">
+                        <h2 class="modal__title">Цена по запросу</h2>
+                    </div>
+                    <form class="form modal-form">
+                        <input type="hidden" name="product" id="product-name" value="">
+                        <label class="modal-form__item">
+                            <span class="modal-form__name">Введите номер Вашего телефона</span>
+                            <input type="tel" name="phone" class="form-input" placeholder="+7 (___) ___-___" data-phone>
+                        </label>
+                        <label class="modal-form__item">
+                            <span class="modal-form__name">и Email</span>
+                            <input type="email" name="email" class="form-input" placeholder="info@mail.ru">
+                        </label>
+                        <button class="btn btn--light_gradient modal-form__btn">
+                            Оставить заявку
+                        </button>
+                        <p class="modal-form__agree">Нажимая на кнопку, я даю согласие на <a href="">обработку персональных данных</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal--success">
+        <div class="modal__body modal__body--success">
+            <div class="modal__wrapper modal__wrapper--success">
+                <button class="close-modal">
+                    <img src="./assets/img/icons/close.svg" alt="">
+                </button>
+                <div class="modal__info">
+                    <div class="modal-success">
+                        <img src="./assets/img/icons/success.svg" alt="" class="modal-success__icon">
+                        <div class="modal-success__wrapper">
+                            <p class="modal-success__title">Спасибо!</p>
+                            <p class="modal-success__text">Ваше сообщение отправлено. В ближайшее время с вами свяжется наш сотрудник.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col">
+                    <a href="" class="logo">
+                        <img src="./assets/img/icons/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__col">
+                    <p class="footer__title">Контакты</p>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="tel:+79373987808" class="footer-list__link">
+                                <img src="./assets/img/icons/footer-phone.svg" alt="">
+                                +7 (937) 398-78-08
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="mailto:chebpol@yandex.ru" class="footer-list__link">
+                                <img src="./assets/img/icons/mail.svg" alt="">
+                                chebpol@yandex.ru
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <p class="footer__title">Адреса</p>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <p class="footer-list__text">Чебоксары, Хевешская 34а</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <p class="footer-list__text">Чебоксары, Складской проезд, 4 корп.2</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <p class="footer-list__text">Чебоксары, Гладкова, 10</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <p class="footer__title">Связаться с нами</p>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="mailto:chebpol@yandex.ru" class="social-list__link">
+                                <img src="./assets/img/icons/viber.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="mailto:chebpol@yandex.ru" class="social-list__link">
+                                <img src="./assets/img/icons/tg.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="mailto:chebpol@yandex.ru" class="social-list__link">
+                                <img src="./assets/img/icons/wa.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./assets/libs/jquery.min.js"></script>
     <script src="./assets/libs/swiper-bundle.min.js"></script>
+    <script src="./assets/libs/wow.min.js"></script>
+    <script src="./assets/libs/jquery.maskedinput.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper.js"></script>
+
+    <script>
+        const wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animate__animated',
+            offset: 30,
+            mobile: false,
+            live: true
+        })
+        wow.init();
+    </script>
 </body>
 </html>

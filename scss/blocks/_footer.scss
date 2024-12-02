@@ -1,0 +1,45 @@
+.footer {
+    background: #fffdf0;
+    padding: 48px 0 58px;
+
+    @media(width <= $breakpoint480) {
+        padding: 40px 0 40px 0;
+    }
+ 
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 109px repeat(3, auto);
+        justify-content: space-between;
+
+        @media(width <= 1080px) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 40px;
+            column-gap: 20px;
+        }
+        @media(width <= $breakpoint600) {
+            grid-template-columns: unset;
+        }
+        @media(width <= $breakpoint480) {
+            gap: 24px;
+        }
+    }
+
+    &__col {
+
+    }
+    &__title {
+        margin-bottom: 40px;
+
+        font-weight: 600;
+        font-size: 30px;
+        color: $main-font-color;
+        
+        @media(width <= 1080px) {
+            margin-bottom: 20px;
+        }
+        @media(width <= $breakpoint480) {
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+    }
+}

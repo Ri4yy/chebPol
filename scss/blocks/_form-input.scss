@@ -1,0 +1,25 @@
+.form-input {
+    padding: 20px 20px 10px 18px;
+    background: #fefefe;
+    border-radius: 5px;
+
+    font-family: $font-inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: #7b7b7b;
+
+    @media(width <= $breakpoint480) {
+        padding: 14px 18px;
+    }
+
+    &::placeholder {
+        font-family: $font-inter;
+        font-weight: 400;
+        font-size: 20px;
+        color: #7b7b7b;
+
+        @media(width <= $breakpoint480) {
+            font-size: 16px;
+        }
+    }
+}
